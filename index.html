@@ -57,29 +57,22 @@
         margin-top: 20px;
         font-size:13px;
       }
+      .diagram-img-responsive {
+        display: none;
+      }
 
       @media screen and (max-width: 600px) {
-        img.third-img-last {
-          width: 200px!important;
-          max-width: 200px!important;
-        }
-        .padding {
-          padding-right: 0!important;
-          padding-left: 0!important;
-        }
+
       }
       @media screen and (max-width: 400px) {
         .top-text {
           display: none;
         }     
         .column {
-          margin: 0
+          margin: 0 auto!important;
         }
         .tbody {
           display: block!important;
-        }
-        .table-3 {
-          margin-left: 0!important;
         }
         .pure-logo {
           text-align: center;
@@ -90,6 +83,37 @@
         .table-2 {
           text-align: center;
           margin-left: 0!important;
+        }
+        .table-3 {
+          margin-left: 0!important;
+          text-align: center;
+        }
+        .table-3-padding {
+          padding: 0 30px!important;
+        }
+        .table-4 {
+          margin-left: 0!important;
+        }
+        .table-4-td {
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+        }
+        .get-pricing-btn {
+          margin-right: 0!important;
+          margin-bottom: 15px;
+        }
+        .get-demo-btn {
+          margin-bottom: 20px;
+        }
+        .table-5-tr {
+          text-align: center;
+        }
+        .diagram-img-desktop {
+          display: none;
+        }
+        .diagram-img-responsive {
+          display: inline;
         }
       }
     </style>
@@ -146,7 +170,7 @@
             <td>
               <table class="table-3" width="100%" style="border-spacing:0;margin-left:50px;">
                 <tr>
-                  <td style="padding:10px;">
+                  <td class="table-3-padding" style="padding:10px;">
                     <p style="font-size: 13px;">
                       An all-in-one AI marketing platform and a Customer Success Team whose sole
                       <br>
@@ -161,11 +185,11 @@
 
           <tr>
             <td>
-              <table width="100%" style="border-spacing:0;margin-left:50px;">
+              <table class="table-4" width="100%" style="border-spacing:0;margin-left:50px;">
                 <tr>
-                  <td style="padding:10px;">
-                    <a href="#"><button style="background-color: #640F88;border:none;padding:12px 35px;color:#FFFFFF;font-size:13px;margin-right:10px;">Get Pricing</button></a>
-                    <a href="#"><button style="background-color: #FF00FF;border:none;padding:12px 35px;color:#FFFFFF;font-size:13px;">Get Demo</button></a>
+                  <td class="table-4-td" style="padding:10px;">
+                    <a href="#"><button class="get-pricing-btn"style="background-color: #640F88;border:none;padding:12px 35px;color:#FFFFFF;font-size:13px;margin-right:10px;">Get Pricing</button></a>
+                    <a href="#"><button class="get-demo-btn" style="background-color: #FF00FF;border:none;padding:12px 35px;color:#FFFFFF;font-size:13px;">Get Demo</button></a>
                   </td>
                 </tr>
               </table>
@@ -177,7 +201,7 @@
           <tr>
             <td>
               <table width="100%" style="border-spacing:0;">
-                <tr>
+                <tr class="table-5-tr">
                   <td class="two-columns">
 
 
@@ -218,6 +242,11 @@
 
                           <table class="content">
                             <tbody class="tbody" style="display: flex;">
+                              <tr>
+                                <td>
+                                  <a href="#"><img class="diagram-img-responsive" src="https://i.ibb.co/vdfzm43/pure360-img-2.png" width="250" alt="Diagram" style="max-width:250px;"></a>
+                                </td>
+                              </tr>
                             <tr>
                               <td style="padding:10px;width: 250px;">
                                 <p style="font-size:20px;font-weight:900;">Connect the dots</p>
@@ -229,7 +258,7 @@
                             </tr>
                             <tr>
                               <td>
-                                <a href="#"><img src="https://i.ibb.co/vdfzm43/pure360-img-2.png" width="250" alt="Diagram" style="max-width:250px;"></a>
+                                <a href="#"><img class="diagram-img-desktop" src="https://i.ibb.co/vdfzm43/pure360-img-2.png" width="250" alt="Diagram" style="max-width:250px;"></a>
                               </td>
                             </tr>
                           </tbody>
